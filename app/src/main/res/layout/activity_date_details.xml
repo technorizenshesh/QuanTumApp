@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.LoginActivity"
+        >
+
+        <RelativeLayout
+            android:id="@+id/RRTollbar"
+            android:padding="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:textSize="@dimen/_18sdp"
+                    android:textColor="@color/black"
+                    android:text="开"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:textSize="@dimen/_18sdp"
+                    android:textColor="@color/sky_blue"
+                    android:text="民"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:textSize="@dimen/_18sdp"
+                    android:textColor="@color/black"
+                    android:text="开"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:textSize="@dimen/_18sdp"
+                    android:textColor="@color/sky_blue"
+                    android:text="开"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right"
+                android:textSize="@dimen/_18sdp"
+                android:text="22.09.2021"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+            </TextView>
+
+        </RelativeLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_above="@+id/llText"
+            android:layout_below="@+id/RRTollbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:background="@drawable/date_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_200sdp"
+                    >
+
+                </ImageView>
+
+                <LinearLayout
+                    android:padding="10sp"
+                    android:orientation="vertical"
+                    android:background="@drawable/border_bg"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:textSize="@dimen/_12sdp"
+                        android:text="恭贺新禧，祝身体健康、事业发达 恭贺新禧，祝身体健康、事业发达恭贺新禧，祝身体健康、事业发达恭贺新禧，祝身体健康、事业发达"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_marginTop="10sp"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="恭贺新禧，祝身体健康、事业发达 恭贺新禧，祝身体健康、事业发达恭贺新禧，祝身体健康、事业发达恭贺新禧，祝身体健康、事业发达"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_marginTop="10sp"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="恭贺新禧，祝身体健康、事业发达 恭贺新禧，祝身体健康、事业发达恭贺新禧，祝身体健康、事业发达恭贺新禧，祝身体健康、事业发达"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:id="@+id/llText"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_50sdp"
+            >
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textSize="@dimen/_16sdp"
+                    android:textColor="@color/black"
+                    android:text="开民"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                </TextView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textSize="@dimen/_16sdp"
+                    android:textColor="@color/sky_blue"
+                    android:text="开开"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                </TextView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

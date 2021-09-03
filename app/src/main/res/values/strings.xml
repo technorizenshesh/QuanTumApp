@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">QuanTumApp</string>
+    <string name="email">Email</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="submit">Submit</string>
+    <string name="if_have_account_login">If have account<b>Login</b></string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="payment_amount">Payment Amount</string>
+    <string name="member_id">Member Id</string>
+    <string name="payment_success">Payment Success</string>
+    <string name="name">Name</string>
+    <string name="pakage_name">Pakage Name</string>
+    <string name="valid_date">Valid Date</string>
+    <string name="transaction_date">Transaction Date</string>
+</resources>

@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.LoginActivity"
+        >
+
+        <RelativeLayout
+            android:id="@+id/RRTollbar"
+            android:padding="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            >
+
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                >
+
+                <RelativeLayout
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="match_parent"
+                    >
+
+                    <TextView
+                        android:textSize="@dimen/_18sdp"
+                        android:textColor="@color/black"
+                        android:text="开 民"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                    </TextView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:background="@drawable/border_bg"
+                    android:visibility="visible"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+
+                    <Spinner
+                        android:id="@+id/spinnerCountry"
+                        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@+id/img_country"
+                        android:background="@android:color/transparent"
+                        android:backgroundTint="@color/black"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:gravity="right"
+                        android:layout_gravity="right"
+                        android:id="@+id/img_country"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/drp"
+                        android:layout_width="@dimen/_12sdp"
+                        android:layout_height="@dimen/_12sdp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:background="@drawable/border_bg"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="match_parent"
+                    >
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/_18sdp"
+                        android:textColor="@color/black"
+                        android:text="2021"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                    </TextView>
+
+                    <ImageView
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/drp"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp">
+
+                    </ImageView>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_above="@+id/llText"
+            android:layout_below="@+id/RRTollbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:background="@drawable/details"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_200sdp"
+                    >
+
+                </ImageView>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_40sdp"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <TextView
+                                android:padding="@dimen/_5sdp"
+                                android:textSize="@dimen/_18sdp"
+                                android:textColor="@color/black"
+                                android:text="民"
+                                android:layout_centerInParent="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                >
+
+                            </TextView>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:background="@drawable/border_bg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <TextView
+                                android:padding="@dimen/_5sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="开"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_18sdp">
+
+                            </TextView>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:background="@drawable/border_bg"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <TextView
+                                android:padding="@dimen/_5sdp"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_centerVertical="true"
+                                android:textSize="@dimen/_18sdp"
+                                android:textColor="@color/black"
+                                android:text="8°"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                >
+
+                            </TextView>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_40sdp"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <TextView
+                                android:padding="@dimen/_5sdp"
+                                android:textSize="@dimen/_18sdp"
+                                android:textColor="@color/black"
+                                android:text="民"
+                                android:layout_centerInParent="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                >
+
+                            </TextView>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:background="@drawable/border_bg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <TextView
+                                android:padding="@dimen/_5sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="开"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_18sdp">
+
+                            </TextView>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:background="@drawable/border_bg"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:padding="@dimen/_5sdp"
+                                android:text="188°"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_18sdp">
+
+                            </TextView>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_40sdp"
+                    android:id="@+id/txtPayment"
+                    android:gravity="center"
+                    android:background="@drawable/login_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:text="开民"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:id="@+id/llText"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/_20sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_60sdp"
+            >
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textSize="@dimen/_16sdp"
+                    android:textColor="@color/black"
+                    android:text="开民"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                </TextView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textSize="@dimen/_16sdp"
+                    android:textColor="@color/sky_blue"
+                    android:text="开开"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                </TextView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

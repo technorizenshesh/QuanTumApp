@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@mipmap/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        >
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".6 "
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            >
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@mipmap/logo"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_200sdp"                >
+
+            </ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+          android:padding="@dimen/_20sdp"
+            android:layout_weight=".4"
+            android:id="@+id/ll_logo"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            >
+
+
+            <TextView
+                android:gravity="center"
+                android:background="@drawable/bg_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_42sdp"
+                android:text="Just as Lable"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                />
+
+            <TextView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:id="@+id/txtLogin"
+                android:gravity="center"
+                android:background="@drawable/login_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_42sdp"
+                android:text="Login"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                />
+
+
+            <TextView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:id="@+id/txt_Register"
+                android:gravity="center"
+                android:background="@drawable/bg_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_42sdp"
+                android:text="Register"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

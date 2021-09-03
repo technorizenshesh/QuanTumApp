@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.LoginActivity"
+        >
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/imgBack"
+                    android:src="@drawable/back"
+                    android:layout_margin="@dimen/_15sdp"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp">
+
+                </ImageView>
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:src="@mipmap/logo_black"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="@dimen/_130sdp"
+                        >
+                    </ImageView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/_14sdp"
+                        />
+
+                    <EditText
+                        android:textCursorDrawable="@drawable/black_cursor"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/_8sdp"
+                        android:hint=""
+                        android:textColor="@color/gray"
+                        android:inputType="textEmailAddress"
+                        />
+
+                    <View
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:background="@color/gry"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        >
+                    </View>
+
+                    <TextView
+                        android:layout_marginTop="10sp"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile Number"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/_14sdp"
+                        />
+
+                    <EditText
+                        android:textCursorDrawable="@drawable/black_cursor"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal"
+                        android:textColor="@color/gray"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/_8sdp"
+                        android:hint=""
+                        android:inputType="number"
+                        />
+
+                    <View
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:background="@color/gry"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        >
+                    </View>
+
+
+                    <TextView
+                        android:layout_marginTop="10sp"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Password"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/_14sdp"
+                        />
+
+                    <EditText
+                        android:textCursorDrawable="@drawable/black_cursor"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal"
+                        android:textColor="@color/gray"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/_8sdp"
+                        android:hint=""
+                        android:inputType="textPassword"
+                        />
+
+                    <View
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:background="@color/gry"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        >
+                    </View>
+
+                    <TextView
+                        android:layout_marginTop="10sp"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Confirm Password"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/_14sdp"
+                        />
+
+                    <EditText
+                        android:textCursorDrawable="@drawable/black_cursor"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="normal"
+                        android:textColor="@color/gray"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/_8sdp"
+                        android:hint=""
+                        android:inputType="textPassword"
+                        />
+
+                    <View
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:background="@color/gry"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        >
+                    </View>
+
+
+                    <TextView
+                        android:id="@+id/txtSubmit"
+                        android:gravity="center"
+                        android:background="@drawable/login_btn"
+                        android:layout_marginTop="@dimen/_50sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        android:text="Submit"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp"
+                        />
+
+                    <TextView
+                        android:id="@+id/txtlogin"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="if have account Login"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/_14sdp"
+                        />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_30sdp"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Agree on Terms When click open the Terms page"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/_12sdp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+</layout>

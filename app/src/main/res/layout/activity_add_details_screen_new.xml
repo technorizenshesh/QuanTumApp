@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.LoginActivity"
+        >
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/imgBack"
+                    android:src="@drawable/back"
+                    android:layout_margin="@dimen/_15sdp"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp">
+
+                </ImageView>
+
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/_50sdp"
+                        android:paddingLeft="5sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Product/Package"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16sdp"
+                        />
+
+
+
+                    <TextView
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:paddingLeft="5sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/member_id"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp"
+                        />
+
+                    <EditText
+                        android:textCursorDrawable="@drawable/black_cursor"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        android:drawablePadding="@dimen/_8sdp"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        />
+
+                    <EditText
+                        android:paddingRight="@dimen/_20sdp"
+                        android:drawableRight="@drawable/arw_top"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:hint="Pakage 1 - Free"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/login_btn_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        android:drawablePadding="@dimen/_8sdp"
+                        android:inputType="text"
+                        />
+
+                    <EditText
+                        android:paddingRight="@dimen/_20sdp"
+                        android:drawableRight="@drawable/arw_top"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/login_btn_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        android:drawablePadding="@dimen/_8sdp"
+                        android:inputType="text"
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/black"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:hint="Free"
+                        />
+
+
+                    <EditText
+                        android:paddingRight="@dimen/_20sdp"
+                        android:drawableRight="@drawable/arw_top"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:hint="Pakage 2 - Free"
+                        android:layout_marginTop="@dimen/_30sdp"
+                        android:background="@drawable/login_btn_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        android:drawablePadding="@dimen/_8sdp"
+                        android:inputType="text"
+                        />
+
+                    <EditText
+                        android:paddingRight="@dimen/_20sdp"
+                        android:drawableRight="@drawable/arw_top"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/login_btn_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        android:drawablePadding="@dimen/_8sdp"
+                        android:inputType="text"
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/black"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:hint="1 PerSon RM"
+                        />
+
+                    .
+
+                    <EditText
+                        android:paddingRight="@dimen/_20sdp"
+                        android:drawableRight="@drawable/arw_top"
+                        android:layout_marginTop="@dimen/_30sdp"
+                        android:background="@drawable/login_btn_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        android:drawablePadding="@dimen/_8sdp"
+                        android:inputType="text"
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/black"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:hint="4 PerSon RM"
+                        />
+
+                    <EditText
+                        android:paddingRight="@dimen/_20sdp"
+                        android:drawableRight="@drawable/arw_top"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:hint="Pakage 3 "
+                        android:layout_marginTop="@dimen/_30sdp"
+                        android:background="@drawable/login_btn_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        android:drawablePadding="@dimen/_8sdp"
+                        android:inputType="text"
+                        />
+
+                    <TextView
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:id="@+id/txtPayment"
+                        android:gravity="center"
+                        android:background="@drawable/login_btn"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        android:text="Confirm"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14sdp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+</layout>
