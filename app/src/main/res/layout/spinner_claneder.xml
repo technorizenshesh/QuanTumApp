@@ -4,11 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-
     <RelativeLayout
         android:padding="@dimen/_5sdp"
         android:id="@+id/rll_spinner"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <TextView
@@ -16,7 +15,7 @@
             android:text="India"
             android:visibility="visible"
             android:id="@+id/textview"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
             android:textSize="@dimen/_16sdp"
@@ -24,5 +23,13 @@
         </TextView>
 
     </RelativeLayout>
+
+    <View
+        android:background="@color/gry"
+        android:layout_below="@+id/rll_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="1sp">
+
+    </View>
 
 </RelativeLayout>

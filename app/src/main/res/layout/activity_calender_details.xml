@@ -43,39 +43,39 @@
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:layout_marginLeft="@dimen/_5sdp"
-                    android:background="@drawable/border_bg"
-                    android:visibility="visible"
                     android:layout_width="@dimen/_100sdp"
                     android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:background="@drawable/border_bg"
                     android:orientation="horizontal"
-                    >
+                    android:visibility="gone">
 
                     <Spinner
                         android:id="@+id/spinnerCountry"
                         style="@style/Base.Widget.AppCompat.Spinner.Underlined"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_toLeftOf="@+id/img_country"
                         android:background="@android:color/transparent"
                         android:backgroundTint="@color/black"
                         android:visibility="visible" />
 
                     <ImageView
-                        android:gravity="right"
-                        android:layout_gravity="right"
                         android:id="@+id/img_country"
-                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_width="@dimen/_12sdp"
+                        android:layout_height="@dimen/_12sdp"
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
-                        android:src="@drawable/drp"
-                        android:layout_width="@dimen/_12sdp"
-                        android:layout_height="@dimen/_12sdp"/>
+                        android:layout_gravity="right"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:gravity="right"
+                        android:src="@drawable/drp" />
 
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:visibility="gone"
+                    android:id="@+id/RR_open"
+                    android:visibility="visible"
                     android:background="@drawable/border_bg"
                     android:layout_marginLeft="@dimen/_5sdp"
                     android:layout_width="@dimen/_100sdp"
@@ -83,6 +83,7 @@
                     >
 
                     <TextView
+                        android:id="@+id/txtDate"
                         android:layout_marginLeft="@dimen/_15sdp"
                         android:layout_centerVertical="true"
                         android:textSize="@dimen/_18sdp"
@@ -123,6 +124,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 >
+
+
+
 
                 <ImageView
                     android:background="@drawable/details"
@@ -345,6 +349,41 @@
             </RelativeLayout>
 
         </LinearLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/RR_calender"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:background="@drawable/border_bg"
+            android:layout_below="@+id/RRTollbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_300sdp"
+            >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_above="@+id/txtOk"
+                android:id="@+id/recyclerCalender"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/txtOk"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:background="@drawable/login_btn"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_34sdp"
+                android:text="Ok"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp"
+                />
+
+        </RelativeLayout>
 
     </RelativeLayout>
 

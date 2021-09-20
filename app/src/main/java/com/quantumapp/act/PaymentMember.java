@@ -12,6 +12,7 @@ import com.quantumapp.databinding.ActivityPaymentMemberBinding;
 public class PaymentMember extends AppCompatActivity {
 
     ActivityPaymentMemberBinding binding;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
